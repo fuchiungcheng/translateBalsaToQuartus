@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" fx:controller="translatebalsatoquartusfxml.FXMLDocumentController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" layoutX="33.0" layoutY="21.0" prefWidth="537.0" spacing="5.0">
+      <children>
+        <HBox id="HBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <Button id="button" fx:id="translateButton" onAction="#handleTranslateButtonAction" text="Translate" />
+            <Button id="button" fx:id="openFileButton" onAction="#handleOpenFileButtonAction" text="Open file" />
+            <Button id="button" onAction="#handleSaveFileButtonAction" text="Save file" />
+            <Button id="button" onAction="#handleSaveAsFileButtonAction" text="Save as" />
+          </children>
+        </HBox>
+        <Button id="button" fx:id="clearButton" onAction="#handleClearButtonAction" text="Clear" />
+      </children>
+    </HBox>
+    <TextArea fx:id="mainTextArea" prefHeight="289.0" prefWidth="410.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="61.0" />
+    <Label fx:id="label" layoutX="549.0" layoutY="28.0" minHeight="16.0" minWidth="69.0" prefWidth="225.0" text="" textFill="BLACK" />
+  </children>
+</AnchorPane>
